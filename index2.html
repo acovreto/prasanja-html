@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vezba</title>
+    <style>
+      .container {
+        width: 90vw;
+        height: 100vh;
+        background-color: #dbe4ff;
+        margin: 0 auto;
+      }
+      h1 {
+        text-align: center;
+        color: #1c6bff;
+      }
+      .panel {
+        width: 70%;
+        height: 80%;
+        background-color: #1c6bff;
+        margin: 0 auto;
+        border-radius: 30px;
+        color: white;
+      }
+      .score,
+      .btn {
+        display: flex;
+        justify-content: space-around;
+        /* color: white; */
+        color: inherit;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .lang {
+        text-align: center;
+        /* color: white; */
+        font-size: 40px;
+        color: inherit;
+      }
+      .eng-word {
+        text-align: center;
+        /* color: white; */
+        font-size: 60px;
+        margin-bottom: 0;
+        color: inherit;
+      }
+      .btn p {
+        border: 2px solid white;
+        padding: 5px 15px;
+        cursor: pointer;
+      }
+      .btn-2 p {
+        border: none;
+        font-size: 40px;
+      }
+      /* .btn-2 {
+        display: none;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>ПРЕВЕДЕТЕ НА МАКЕДОНСКИ</h1>
+      <div class="panel">
+        <div class="score">
+          <p>word:<span id="word-count">0</span></p>
+          <p>score:<span id="score-count">0</span></p>
+        </div>
+        <h2 class="lang">English</h2>
+        <h1 class="eng-word">Student</h1>
+        <div class="btn btn-1">
+          <p id="check">Check</p>
+          <p id="reset">Reset</p>
+        </div>
+        <div class="btn btn-2">
+          <p id="correct">✅</p>
+          <p id="wrong">❌</p>
+        </div>
+      </div>
+    </div>
+    <script src="index2.js"></script>
+  </body>
+</html>
